@@ -1,0 +1,73 @@
+header{
+    width: 102%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--second-background-color);
+    box-shadow: 7px 5px 10px gray;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 999999999;
+    margin: -20px 0px 40px -20px;
+    padding-right:50px ;
+    }
+    header>*{
+        align-self: center;
+    }
+    header img{
+        width: 100px;
+        height: 100px;
+    }
+    header .nav-bar{
+        width: 60%;
+        font-size: 18px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        }
+        header .nav-bar nav{
+            cursor: pointer;
+            margin-left: 30px;
+        }
+#landingPage span{
+    color: var(--primary-color);
+}
+#landingPage section{
+    margin-bottom: 40px;
+}
+#landingPage .presentation{
+    width: 100%;
+    height: calc(100vh - 140px);
+    overflow: hidden;
+    }
+    #landingPage .presentation .text-presentation{
+        width: 50%;
+        padding-left: 20px;
+        }
+        #landingPage .presentation .text-presentation h1{
+            color: var(--primary-color);
+            font-size: 50px;
+        }
+        #landingPage .presentation .text-presentation h3{
+            font-size: 40px;
+        }
+        #landingPage .presentation .text-presentation p{
+            font-size: 20px;
+            text-align: justify;
+        }
+    #landingPage .presentation img{
+        width: 50%;
+        object-fit: cover;
+        align-self: flex-start;
+    }
+#landingPage .service{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    width: 100%;
+    }
+    #landingPage .service h1{
+        font-size: 50px;
+        text-align: center;
+    }

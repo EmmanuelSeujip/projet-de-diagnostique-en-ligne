@@ -1,0 +1,28 @@
+.basic-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.classic-btn,.classic-container{
+    background-color: var(--primary-color);
+    color:white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    height: fit-content;
+    width: fit-content;
+    font-size: 20px;
+    border: none;
+    
+    }   
+    .classic-btn:hover{
+        background-color: var(--hover-color);
+        cursor:pointer;
+    }
+.classic-container{
+    border-radius: 50px !important;
+}
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+    font-family: Satoshi;
+}

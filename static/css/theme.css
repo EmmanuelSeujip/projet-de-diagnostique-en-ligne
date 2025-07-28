@@ -1,0 +1,23 @@
+:root{
+    --primary-color:#40b93c;
+    --accent-color:#006838;
+    --text-color:black;
+    --error-color:#f0693d;
+    --background-color:#fbfffb;
+    --hover-color:#006838;
+    --success-color:#40b93c;
+    --second-background-color:white;
+}
+
+@media (prefers-color-scheme: dark){
+    :root{
+        --primary-color:#40b93c;
+        --accent-color:#006838;
+        --text-color:white;
+        --error-color: #ce5e38;
+        --background-color:#171616;
+        --hover-color:#006838;
+        --success-color:#006838;
+        --second-background-color:black;
+    }
+}
