@@ -120,7 +120,7 @@ STATIC_URL = 'static/'
 import os
 
 # Chemin absolu vers ton dossier static
-PUBLIC_ROOT = os.path.join(BASE_DIR, 'static')
+PUBLIC_ROOT = os.path.join(BASE_DIR, 'public')
 
 # URL à utiliser pour accéder aux fichiers
 PUBLIC_URL = '/static/'

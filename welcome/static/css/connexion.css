@@ -1,0 +1,24 @@
+.main-form-connexion{
+  display: flex;
+  justify-content: center;
+  }
+  .main-form-connexion section{
+    width: 50%;
+    border-radius: 50px;
+    border: 1px solid var(--primary-color);
+    padding: 30px;
+    }
+    .main-form-connexion section h1{
+      color: var(--primary-color);
+      font-weight: 200;
+    }
+    .main-form-connexion section .input-form{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      }
+      .main-form-connexion section .input-form span{
+        position: absolute;
+      }
+

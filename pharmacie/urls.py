@@ -20,7 +20,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from welcome.views import index
+from welcome.views import connexion
 urlpatterns = [
     path("",index),
     path("admin/", admin.site.urls),
+    path("connexion/",connexion)
 ]
