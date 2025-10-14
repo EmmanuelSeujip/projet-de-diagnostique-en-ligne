@@ -2,31 +2,48 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="/static/css/general.css">
+  <link rel="stylesheet" href="/static/css/constant.css">
   <link rel="stylesheet" href="/static/css/theme.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="/static/css/font-awesome/all.css">
-  <link rel="stylesheet" href="/static/css/font-awesome/">
+  <link rel="stylesheet" href="/static/css/font-awesome/css/all.css">
   <link rel="stylesheet" href="/static/css/connexion.css">
 </head>
 <body>
   <main>
     <section class="main-form-connexion">
-      <img src="../static/images/women.svg" alt="">
+      <img src="../static/images/women.svg">
       <section>
-        <h1>Connecter-vous à votre compte</h1>
+        <div class="header-form">
+          <img src="/static/image/logo_sans_slogan.png">
+          <h1>Connectez-vous à votre espace</h1>
+        </div>
+        
         <div class="input-form">
-          <span>Email</span>
           <div class="main-input">
             <input type="mail">
-            <div class="fa-solid fa-envelope"></div>
+            <span>Email</span>
+            <div class="fas fa-envelope"></div>
           </div>
         </div>
         <div class="input-form">
-          <span>Mot de passe</span>
+          <div class="main-input">
+            <input type="password">
+            <span>Mot de passe</span>
+            <div class="fas fa-lock"></div>
+          </div>
         </div>
-        <div class="input-form"></div>
+        <p  class="forget-pass">
+          Mot de passe oublié
+        </p>
+        <button class="classic-btn">connexion</button>
+        <div style="margin: 10px;">ou</div>
+        <div class="connect-google">
+          <img src="/static/images/images.png" alt="">
+          <div>Vous connecter avec google</div>
+        </div>
+        <p>Vous n'avez pas de compte ? Alors <a href="">Inscrivez-vous</a></p>
       </section>
       <img src="../static/images/men charactere.svg" alt="">
     </section>

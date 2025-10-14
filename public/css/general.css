@@ -7,6 +7,9 @@
     line-height: 1.06; 
     font-weight: 400;
 }
+a,*:link{
+    color: var(--primary-color);
+}
 .basic-flex{
     display: flex;
     justify-content: space-between;
@@ -30,7 +33,7 @@
     border-radius: 50px !important;
 }
 body{
-    background-color: var(--background-color);
+
     color: var(--text-color);
     overflow-x: hidden;
     font-family: Satoshi;
