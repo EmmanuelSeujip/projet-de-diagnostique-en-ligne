@@ -14,41 +14,54 @@
   <main>
     <section class="main-form-connexion">
       <img src="../static/images/women.svg">
-      <section>
+      <form action="{% url 'login' %}" 
+            method="post" 
+            class="all-form" 
+            id="allForm"
+            >
+        {% csrf_token %}
         <div class="header-form">
           <img src="/static/image/logo_sans_slogan.png">
           <h1>Connectez-vous à votre espace</h1>
         </div>
-        
-        <div class="input-form">
-          <div class="main-input">
-            <input type="mail">
-            <span>Email</span>
-            <div class="fas fa-envelope"></div>
-          </div>
-        </div>
-        <div class="input-form">
+        {% for field in fields %}
+          <div class="input-form">
+            <div class="main-input">
+              <input 
+                type="{{field.type}}" 
+                name="{{field.name}}" 
+                {% if field.required %} required {% endif %}>
+              <span>{{field.label}} </span>
+              <div class="{{field.icon}}"></div>
+            </div>
+          </div>       
+        {% endfor %}
+
+        {% comment %} <div class="input-form">
           <div class="main-input">
             <input type="password">
             <span>Mot de passe</span>
             <div class="fas fa-lock"></div>
           </div>
-        </div>
+        </div> {% endcomment %}
         <p  class="forget-pass">
           Mot de passe oublié
         </p>
-        <button class="classic-btn">connexion</button>
+        <button type="submit" class="classic-btn">connexion</button>
         <div style="margin: 10px;">ou</div>
         <div class="connect-google">
           <img src="/static/images/images.png" alt="">
           <div>Vous connecter avec google</div>
         </div>
         <p>Vous n'avez pas de compte ? Alors <a href="">Inscrivez-vous</a></p>
-      </section>
+      </form>
       <img src="../static/images/men charactere.svg" alt="">
     </section>
-
-    
+  <script>
+    function soumission(e){
+      e.preventDefault
+    }
+  </script>
   </main>
 </body>
 </html>

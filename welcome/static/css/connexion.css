@@ -3,8 +3,8 @@
   justify-content: center;
   width: 100%;
   }
-  .main-form-connexion section{
-    width: 40%;
+  .main-form-connexion .all-form{
+    width: 35%;
     border-radius: 50px;
     border: 1px solid var(--primary-color);
     padding: 30px;
@@ -13,28 +13,28 @@
     flex-direction: column;
     align-items: center;
     }
-    .main-form-connexion section .header-form{
+    .main-form-connexion .all-form .header-form{
       display: flex;
       justify-content: center;
       align-items: center;
       }
-      .main-form-connexion section h1{
+      .main-form-connexion .all-form h1{
         font-weight: 300;
         font-size: 25px;
         color: var(--primary-color);
       }
-      .main-form-connexion section .header-form img{
+      .main-form-connexion .all-form .header-form img{
         width: 70px;
         height: 70px;
       }
-    .main-form-connexion section .input-form{
+    .main-form-connexion .all-form .input-form{
       width: 100%;
       display: flex;
       justify-content: space-between;
       position: relative;
       margin-top: 30px;
       }
-      .main-form-connexion section .input-form .main-input{
+      .main-form-connexion .all-form .input-form .main-input{
         position: relative;
         display: flex;
         justify-content: space-between;
@@ -43,13 +43,13 @@
         border-bottom: 3px solid var(--primary-color);
         align-items: center;
         }
-        .main-form-connexion section .input-form span{
+        .main-form-connexion .all-form .input-form span{
           position: absolute;
           align-self: center;
           z-index: 5;
           transition: all var(--fast-anim) ease-in-out;
         }
-        .main-form-connexion section .input-form .main-input input{
+        .main-form-connexion .all-form .input-form .main-input input{
           width: 90%;
           height: 40px;
           border: none;
@@ -58,27 +58,27 @@
           z-index: 10;
 
         }
-        .main-form-connexion section .input-form .main-input input:focus{
+        .main-form-connexion .all-form .input-form .main-input input:focus{
           border: none;
           box-shadow: var(--shadow-sm);
         }
-        .main-form-connexion section .input-form .main-input input:focus + span{
+        .main-form-connexion .all-form .input-form .main-input input:focus + span{
           transform: translateY(-30px);
         }
-    .main-form-connexion section .forget-pass{
+    .main-form-connexion .all-form .forget-pass{
       width: 100%;
       text-align: right;
       color: var(--primary-color);
       cursor: pointer;
       }
-      .main-form-connexion section .forget-pass:hover{
+      .main-form-connexion .all-form .forget-pass:hover{
         text-decoration: underline;
       }
-      .main-form-connexion section>button{
+      .main-form-connexion .all-form>button{
         border-radius: 50px;
         font-size: 25px;
       }
-      .main-form-connexion section .connect-google{
+      .main-form-connexion .all-form .connect-google{
         cursor: pointer;
         display: flex;
         align-items: center;
@@ -87,10 +87,10 @@
         border-radius: var(--radius-md);
         padding: 10px;
         }
-        .main-form-connexion section .connect-google:hover{
+        .main-form-connexion .all-form .connect-google:hover{
           box-shadow: var(--shadow-primary);
         }
-        .main-form-connexion section .connect-google img{
+        .main-form-connexion .all-form .connect-google img{
           width: 30px;
           height: 30px;
           margin-right: 10px;

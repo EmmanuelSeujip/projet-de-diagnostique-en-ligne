@@ -24,5 +24,5 @@ from welcome.views import connexion
 urlpatterns = [
     path("",index),
     path("admin/", admin.site.urls),
-    path("connexion/",connexion)
+    path("connexion/",connexion,name="login")
 ]
