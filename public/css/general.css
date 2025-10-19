@@ -23,11 +23,12 @@ a,*:link{
     width: fit-content;
     font-size: 20px;
     border: none;
-    
+    transition: all 0.3s ease-in-out;
     }   
     .classic-btn:hover{
         background-color: var(--hover-color);
         cursor:pointer;
+        transform: scale(1.1);
     }
 .classic-container{
     border-radius: 50px !important;

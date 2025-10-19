@@ -13,6 +13,14 @@
     flex-direction: column;
     align-items: center;
     }
+    /* Ca peut parraitre gros mais je veux les ajouter a tous la meme annlation */
+    .main-form-connexion .all-form .header-form,
+    .main-form-connexion .all-form .input-form,
+    .main-form-connexion .all-form button,
+    .main-form-connexion .all-form .connect-google,
+    .main-form-connexion .all-form >p{
+      animation: comeToTop 1s ease-in-out;
+    }
     .main-form-connexion .all-form .header-form{
       display: flex;
       justify-content: center;
@@ -114,24 +122,34 @@
 @keyframes comeToLeft {
   from{
     opacity: 0;
-    transform: translateX(-400px);
-    width: 0;
+    transform: translateX(-200px);
+
   }
   to{
     opacity: 1;
     transform: translateX(0px);
-    width: 20%;
+
   }
 }
 @keyframes comeToRight {
   from{
     opacity: 0;
-    transform: translateX(400px);
-    width: 0;
+    transform: translateX(200px);
+
   }
   to{
     opacity: 1;
     transform: translateX(0px);
-    width: 20%;
+
+  }
+}
+@keyframes comeToTop {
+  from{
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
   }
 }
