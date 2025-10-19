@@ -34,8 +34,8 @@ a,*:link{
     border-radius: 50px !important;
 }
 body{
-
     color: var(--text-color);
     overflow-x: hidden;
     font-family: Satoshi;
 }
+

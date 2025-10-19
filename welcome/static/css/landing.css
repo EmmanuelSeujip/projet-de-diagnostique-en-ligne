@@ -61,7 +61,7 @@ header{
         object-fit: cover;
         align-self: flex-start;
     }
-#landingPage .service{
+#landingPage .service, #landingPage .bref{
     display: flex;
     align-items:center;
     flex-direction: column;
@@ -71,3 +71,25 @@ header{
         font-size: 50px;
         text-align: center;
     }
+    #landingPage .bref .bref-info{ 
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        }
+        #landingPage .bref .bref-info>div{
+            width: 30%;
+            margin-left: 5%;
+            margin-top: 50px;
+            }
+            #landingPage .bref .bref-info>div h1{
+                font-size: 32px;
+                margin-bottom: 50px;
+            }
+            #landingPage .bref .bref-info>div p{
+                font-size: 18px;
+                margin-bottom: 50px;
+            }
+        #landingPage .bref .bref-info > img{
+            width: 40%;
+        }

@@ -153,3 +153,15 @@
     transform: translateY(0);
   }
 }
+
+@media (max-width: 900px), (pointer: coarse) {
+    .main-form-connexion>img{
+      display: none;
+      animation-name: none;
+    }
+    .main-form-connexion .all-form{
+      width: 100% ;
+      border: none;
+      padding: 0px;
+    }
+}
