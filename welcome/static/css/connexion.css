@@ -56,13 +56,18 @@
           background: none;
           outline: none;
           z-index: 10;
-
+          font-size: 18px;
         }
         .main-form-connexion .all-form .input-form .main-input input:focus{
           border: none;
           box-shadow: var(--shadow-sm);
         }
-        .main-form-connexion .all-form .input-form .main-input input:focus + span{
+        .main-form-connexion .all-form .input-form .main-input input::placeholder{
+          color: transparent !important;
+        }
+        .main-form-connexion .all-form .input-form .main-input input:focus + span,
+        .main-form-connexion .all-form .input-form .main-input input:not(:placeholder-shown) +span
+        {
           transform: translateY(-30px);
         }
     .main-form-connexion .all-form .forget-pass{
@@ -95,4 +100,38 @@
           height: 30px;
           margin-right: 10px;
         }
-
+  .main-form-connexion>img{
+    width: 20%;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+  }      
+  .main-form-connexion .leftImg{
+    animation-name: comeToLeft
+  }
+  .main-form-connexion .rightImg{
+    animation-name:comeToRight ;
+  }
+@keyframes comeToLeft {
+  from{
+    opacity: 0;
+    transform: translateX(-400px);
+    width: 0;
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+    width: 20%;
+  }
+}
+@keyframes comeToRight {
+  from{
+    opacity: 0;
+    transform: translateX(400px);
+    width: 0;
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+    width: 20%;
+  }
+}

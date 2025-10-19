@@ -13,7 +13,7 @@
 <body>
   <main>
     <section class="main-form-connexion">
-      <img src="../static/images/women.svg">
+      <img src="../static/images/women.svg" class="leftImg">
       <form action="{% url 'login' %}" 
             method="post" 
             class="all-form" 
@@ -30,20 +30,13 @@
               <input 
                 type="{{field.type}}" 
                 name="{{field.name}}" 
+                placeholder="no"
                 {% if field.required %} required {% endif %}>
               <span>{{field.label}} </span>
               <div class="{{field.icon}}"></div>
             </div>
           </div>       
         {% endfor %}
-
-        {% comment %} <div class="input-form">
-          <div class="main-input">
-            <input type="password">
-            <span>Mot de passe</span>
-            <div class="fas fa-lock"></div>
-          </div>
-        </div> {% endcomment %}
         <p  class="forget-pass">
           Mot de passe oublié
         </p>
@@ -55,11 +48,11 @@
         </div>
         <p>Vous n'avez pas de compte ? Alors <a href="">Inscrivez-vous</a></p>
       </form>
-      <img src="../static/images/men charactere.svg" alt="">
+      <img src="../static/images/men charactere.svg" class="rightImg">
     </section>
   <script>
     function soumission(e){
-      e.preventDefault
+      e.preventDefault()
     }
   </script>
   </main>
