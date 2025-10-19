@@ -37,8 +37,7 @@ def connexion(request):
             user= authenticate(request,username=user_obj.username,password=password)
             if user is not None:
                 # login(request,user)
-                # Pour le moment on a pas de page home
-                return redirect('connexion/')
+                return redirect('home/')
             else:
                 error="Mot de passe incorrect"
         except User.DoesNotExist:

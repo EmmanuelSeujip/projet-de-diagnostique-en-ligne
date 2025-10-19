@@ -21,8 +21,14 @@ from django.contrib import admin
 from django.urls import path
 from welcome.views import index
 from welcome.views import connexion
+from user.views import home
 urlpatterns = [
+    
+    #Lien de navigation pour l'accueil d'un utilisateur (non protégé)
     path("",index),
     path("admin/", admin.site.urls),
-    path("connexion/",connexion,name="login")
+    path("connexion/",connexion,name="login"),
+    
+    # Lien de navigation pour utilisateur (protégé)
+    path("home/",home)   
 ]
